@@ -10,5 +10,7 @@
 #define PCH_H
 
 // TODO: add headers that you want to pre-compile here
-
+#include <windows.h>
+#include "escapi.h"
+#include "olcge.h"
 #endif //PCH_H
