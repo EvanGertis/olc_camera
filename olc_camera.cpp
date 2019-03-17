@@ -4,9 +4,9 @@ Purpose: this file contains the 'main' function. Program execution begins and en
 Author: Evan Gertis
 Date: 03/17/2019
 */
-
+#pragma once
 #include "pch.h"
-#include <iostream>
+#include "olcge.h"
 class OneLoneCoder_Video : public olcConsoleGameEngine
 {
 public:
@@ -41,10 +41,10 @@ protected:
 	virtual bool OnUserUpdate(float fElapsedTime) {
 		
 		//capture webcam image.
-		doCapture(0);
+		doCapture(1);
 		
 		//wait for capture notification.
-		while (isCaptureDone(0) == 0) {
+		while (isCaptureDone(1) == 0) {
 
 		}
 
@@ -101,8 +101,8 @@ int main()
 {
 	//Instantiate the olc Game Engine.
 	OneLoneCoder_Video game;
-	//game.ConstructConsole(320, 240, 4, 4);
-	//game.Start();
+	game.ConstructConsole(128, 120, 4, 4);
+	game.Start();
 	return 0;
 }
 

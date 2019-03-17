@@ -11,6 +11,8 @@
 
 // TODO: add headers that you want to pre-compile here
 #include <windows.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
 #include "escapi.h"
-#include "olcge.h"
 #endif //PCH_H

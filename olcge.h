@@ -1,5 +1,3 @@
-#pragma once
-#include "pch.h"
 /*
 OneLoneCoder.com - Command Line Game Engine
 "Who needs a frame buffer?" - @Javidx9
